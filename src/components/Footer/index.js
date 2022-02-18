@@ -1,0 +1,45 @@
+import { FaGithubSquare, FaLinkedin, } from "react-icons/fa";
+import styled from "styled-components";
+
+
+const FooTer = styled.div`
+background-color: #0E6EFA;
+color: #000;
+padding: 1.2rem;
+display: flex;
+align-items: center;
+justify-content: center;
+position: fixed;
+bottom: 0;
+width: 100%;
+`;
+
+const Redes = styled.div`
+font-size: 1.8rem;
+a {
+    color: #000;
+    text-decoration: none;
+    &:hover{
+    font-size: 2.5rem;
+}
+}
+`;
+
+
+export const Footer = () => {
+    return(
+        <>
+        <FooTer>
+            <Redes>
+            <a target="_blank" href="https://github.com/">
+                <FaGithubSquare />
+            </a>
+            <a target="_blank" href="https://www.linkedin.com/">
+            <FaLinkedin />
+            </a>
+            </Redes>
+        </FooTer>
+        
+        </>
+    )
+}
